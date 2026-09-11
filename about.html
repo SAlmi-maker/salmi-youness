@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About, Youness Salmi</title>
+  <meta name="description" content="Background, education, skills and languages of Youness Salmi, Mechanical Engineering Technician.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">YS<span>.</span></a>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" data-i18n="nav.home" href="index.html">Home</a>
+        <a class="nav-link" aria-current="page" data-i18n="nav.about" href="about.html">About</a>
+        <a class="nav-link" data-i18n="nav.experience" href="experience.html">Experience</a>
+        <a class="nav-link" data-i18n="nav.projects" href="projects.html">Projects</a>
+        <a class="nav-link" data-i18n="nav.contact" href="contact.html">Contact</a>
+        <select id="langSelect" class="lang-select" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+          <option value="es">ES</option>
+          <option value="de">DE</option>
+        </select>
+        
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom:40px;">
+      <div class="container">
+        <span class="badge" style="color:var(--dim);" data-i18n="about.badge">About</span>
+        <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);" data-i18n="about.h1">Really, it's simple.</h1>
+        <p class="role" data-i18n="about.role">I turn ideas into solutions, a concept becomes a model, a model becomes a drawing, a drawing becomes something a machinist can build.</p>
+      </div>
+    </section>
+
+    <section class="section" style="border-top:0;">
+      <div class="container">
+        <p style="color:var(--dim);max-width:64ch;" data-i18n="about.bio">Mechanical Engineering Technician with hands-on experience in CAD design, product development, and manufacturing engineering. Proficient in SolidWorks and AutoCAD. I spent summer 2026 at Fujikura Automotive (Kenitra) as a Maintenance Assistant, where I contributed to a maintenance data system and prepared preventive maintenance plans. Seeking an Engineering Trainee role in product development in an international engineering environment.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="mono sec-label" data-i18n="about.education">Education</p>
+        <div class="box" style="margin-top:6px;">
+          <p style="color:var(--dim);margin:0;" data-i18n="about.edu1"><strong style="color:var(--text);">DTS Mechanical Engineering</strong>, Cité des Métiers et des Compétences de L'Oriental, 2024–2026</p>
+          <p style="color:var(--dim);margin:8px 0 0;" data-i18n="about.edu2"><strong style="color:var(--text);">Baccalauréat Sciences Physiques</strong>, 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="mono sec-label" data-i18n="about.skills">Skills</p>
+        <div class="about-cols" style="margin-top:6px;">
+          <div class="box">
+            <h3 data-i18n="about.technical">Technical</h3>
+            <ul>
+              <li>SolidWorks</li>
+              <li>AutoCAD</li>
+              <li data-i18n="about.sk.cad">CNC Machining</li>
+              <li data-i18n="about.sk.proc">Manufacturing Processes</li>
+              <li data-i18n="about.sk.mat">Materials Science</li>
+              <li data-i18n="about.sk.lean">Lean Manufacturing</li>
+              <li data-i18n="about.sk.draw">Engineering Drawings</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3 data-i18n="about.soft">Soft</h3>
+            <ul>
+              <li data-i18n="about.so.prob">Problem Solving</li>
+              <li data-i18n="about.so.crit">Critical Thinking</li>
+              <li data-i18n="about.so.comm">Communication</li>
+              <li data-i18n="about.so.team">Teamwork</li>
+              <li data-i18n="about.so.time">Time Management</li>
+              <li data-i18n="about.so.lead">Leadership</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3 data-i18n="about.langTitle">Languages</h3>
+            <ul>
+              <li data-i18n="about.lang.ar">Arabic, native</li>
+              <li data-i18n="about.lang.en">English, fluent</li>
+              <li data-i18n="about.lang.fr">French, intermediate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span data-year>2026</span> Youness Salmi</span>
+      <span><a data-i18n="footer.email" href="mailto:career@salmiyouness.website">Email</a> · <a data-i18n="footer.linkedin" href="https://www.linkedin.com/in/youness-salmi-71b777331" rel="noopener" target="_blank">LinkedIn</a></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

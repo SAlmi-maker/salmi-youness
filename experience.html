@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience, Youness Salmi</title>
+  <meta name="description" content="Professional experience of Youness Salmi: two months as a Maintenance Assistant at Fujikura Automotive Morocco, Kenitra.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">YS<span>.</span></a>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" data-i18n="nav.home" href="index.html">Home</a>
+        <a class="nav-link" data-i18n="nav.about" href="about.html">About</a>
+        <a class="nav-link" aria-current="page" data-i18n="nav.experience" href="experience.html">Experience</a>
+        <a class="nav-link" data-i18n="nav.projects" href="projects.html">Projects</a>
+        <a class="nav-link" data-i18n="nav.contact" href="contact.html">Contact</a>
+        <select id="langSelect" class="lang-select" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+          <option value="es">ES</option>
+          <option value="de">DE</option>
+        </select>
+        
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom:40px;">
+      <div class="container">
+        <span class="badge" style="color:var(--dim);" data-i18n="nav.experience">Experience</span>
+        <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);" data-i18n="exp.h1">Professional experience.</h1>
+        <p class="role" data-i18n="exp.intro">Two months as a Maintenance Assistant on a live automotive production line, real maintenance, real data, real teams.</p>
+      </div>
+    </section>
+
+    <section class="section" style="border-top:0;">
+      <div class="container">
+        <div class="box" style="padding:28px;">
+          <p class="mono" data-i18n="exp.dates" style="color:var(--accent);">Summer 2026, 2-month internship</p>
+          <h1 style="font-size:1.6rem;" data-i18n="exp.company">Fujikura Automotive Morocco</h1>
+          <p class="mono" data-i18n="exp.role">Maintenance Assistant</p>
+          <p class="mono" data-i18n="exp.city" style="color:var(--dim);">Kenitra, Morocco</p>
+
+          <p class="mono sec-label" style="margin-top:26px;color:var(--accent);" data-i18n="exp.what">What I did</p>
+          <ul class="box" style="list-style:none;margin:0;padding:0;border:0;">
+            <li style="padding:10px 0;border-bottom:1px dashed var(--line);color:var(--dim);" data-i18n="exp.item1">Supported preventive and corrective maintenance on production line equipment.</li>
+            <li style="padding:10px 0;border-bottom:1px dashed var(--line);color:var(--dim);" data-i18n="exp.item2">Contributed to a maintenance data analysis system, structuring how interventions are logged.</li>
+            <li style="padding:10px 0;border-bottom:1px dashed var(--line);color:var(--dim);" data-i18n="exp.item3">Prepared preventive maintenance plans from real floor data.</li>
+            <li style="padding:10px 0;color:var(--dim);" data-i18n="exp.item4">Collaborated with production teams on continuous improvement.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="border-top:0;">
+      <div class="container">
+        <div class="vis-grid">
+          <figure class="vis-item wide"><img src="fujikura.jpg" alt="Fujikura Automotive, Kenitra"></figure>
+          <figure class="vis-item"><img src="fujikura%201.jpg" alt="Maintenance work"></figure>
+          <figure class="vis-item"><img src="fujikura%202.png" alt="Maintenance data"></figure>
+          <figure class="vis-item"><img src="fujikura%203.png" alt="Production line"></figure>
+          <figure class="vis-item"><img src="fujikura%204.png" alt="Site visit"></figure>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span data-year>2026</span> Youness Salmi</span>
+      <span><a data-i18n="footer.email" href="mailto:career@salmiyouness.website">Email</a> · <a data-i18n="footer.linkedin" href="https://www.linkedin.com/in/youness-salmi-71b777331" rel="noopener" target="_blank">LinkedIn</a></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

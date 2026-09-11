@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hybrid Turbo-Compressor System, Case Study, Youness Salmi</title>
+  <meta name="description" content="Case study: packaging, layout and 3D assembly of a hybrid motor-assisted turbo-compressor system, with material selection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">YS<span>.</span></a>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" data-i18n="nav.home" href="index.html">Home</a>
+        <a class="nav-link" data-i18n="nav.about" href="about.html">About</a>
+        <a class="nav-link" data-i18n="nav.experience" href="experience.html">Experience</a>
+        <a class="nav-link" data-i18n="nav.projects" href="projects.html">Projects</a>
+        <a class="nav-link" data-i18n="nav.contact" href="contact.html">Contact</a>
+        <select id="langSelect" class="lang-select" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+          <option value="es">ES</option>
+          <option value="de">DE</option>
+        </select>
+        
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header class="cs-head">
+        <div class="container">
+          <a class="back" data-i18n="cs.back" href="projects.html">← Projects</a>
+          <h1 data-i18n="p.turbo.title">Hybrid Turbo-Compressor System</h1>
+          <div class="meta"><span data-i18n="meta.role">Role</span>: <span data-i18n="turbo.role" style="color:var(--text);">Mechanical designer</span> · <span data-i18n="meta.tools">Tools</span>: <span style="color:var(--text);">SolidWorks</span> · <span data-i18n="meta.date">Date</span>: <span data-i18n="turbo.date" style="color:var(--text);">2025</span></div>
+        </div>
+      </header>
+
+      <div class="container cs-body">
+        <div class="vis-main">
+          <img src="Hybrid%20Turbo-Compressor%20System.png" alt="Hybrid turbo-compressor system assembly">
+        </div>
+        <section class="cs-sec" style="border-top:0;">
+          <h2><span class="n">01</span><span data-i18n="cs.problem">The problem</span></h2>
+          <p data-i18n="turbo.problem">A fixed single-stage turbo-compressor locks you into one pressure/flow compromise. Plants with fluctuating load run oversized and waste energy, or undersized and bottleneck. <strong>The brief: prove a motor-assisted hybrid layout, packaging, and materials before any hardware is cut.</strong></p>
+        </section>
+        <section class="cs-sec">
+          <h2><span class="n">02</span><span data-i18n="cs.did">What I did</span></h2>
+          <p data-i18n="turbo.did">Mapped compressor configurations and defined the operating envelope. Built the full SolidWorks assembly, housings, impeller, motor, bearings, couplings, checking fit, access, and thermal separation at each stage. Chose materials by duty (temperature, wear, corrosion) and produced manufacturing drawings of the housings and rotating parts.</p>
+        </section>
+        <section class="cs-sec">
+          <h2><span class="n">03</span><span data-i18n="cs.result">Result</span></h2>
+          <p data-i18n="turbo.result">A fully modeled assembly with justified materials and drawings, showing how motor assist widens the efficient operating window. <strong>If I did it again:</strong> spend more time on bearing and coupling selection and thermal clearance, it reads small in a model and decides everything in a running machine.</p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span data-year>2026</span> Youness Salmi</span>
+      <span><a data-i18n="footer.email" href="mailto:career@salmiyouness.website">Email</a> · <a data-i18n="footer.linkedin" href="https://www.linkedin.com/in/youness-salmi-71b777331" rel="noopener" target="_blank">LinkedIn</a></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

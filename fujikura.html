@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fujikura, Maintenance Data System, Case Study, Youness Salmi</title>
+  <meta name="description" content="Case study: Maintenance Failure Analysis Tool, a browser-only app that turns Excel maintenance logs into machine risk analysis, forecasts and a yearly preventive plan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">YS<span>.</span></a>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" data-i18n="nav.home" href="index.html">Home</a>
+        <a class="nav-link" data-i18n="nav.about" href="about.html">About</a>
+        <a class="nav-link" data-i18n="nav.experience" href="experience.html">Experience</a>
+        <a class="nav-link" data-i18n="nav.projects" href="projects.html">Projects</a>
+        <a class="nav-link" data-i18n="nav.contact" href="contact.html">Contact</a>
+        <select id="langSelect" class="lang-select" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+          <option value="es">ES</option>
+          <option value="de">DE</option>
+        </select>
+        
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header class="cs-head">
+        <div class="container">
+          <a class="back" data-i18n="cs.back" href="projects.html">← Projects</a>
+          <h1 data-i18n="p.fujikura.title">Fujikura, Maintenance Data System</h1>
+          <div class="meta"><span data-i18n="meta.role">Role</span>: <span data-i18n="fujikura.role" style="color:var(--text);">Maintenance Assistant (internship)</span> · <span data-i18n="meta.where">Where</span>: <span data-i18n="fujikura.where" style="color:var(--text);">Fujikura Automotive, Kenitra</span> · <span data-i18n="meta.date">Date</span>: <span data-i18n="fujikura.date" style="color:var(--text);">Jul–Sep 2026</span></div>
+        </div>
+      </header>
+
+      <div class="container cs-body">
+        <div class="carousel" data-carousel>
+          <div class="carousel-track" data-track>
+            <figure class="carousel-slide"><img src="1.png" alt="Machine analysis 1"></figure>
+            <figure class="carousel-slide"><img src="2.png" alt="Machine analysis 2"></figure>
+            <figure class="carousel-slide"><img src="3.png" alt="Machine analysis 3"></figure>
+            <figure class="carousel-slide"><img src="4.png" alt="Machine analysis 4"></figure>
+            <figure class="carousel-slide"><img src="5.png" alt="Machine analysis 5"></figure>
+            <figure class="carousel-slide"><img src="6.png" alt="Machine analysis 6"></figure>
+            <figure class="carousel-slide"><img src="7.png" alt="Machine analysis 7"></figure>
+            <figure class="carousel-slide"><img src="8.png" alt="Machine analysis 8"></figure>
+          </div>
+          <button class="carousel-btn carousel-prev" type="button" data-prev aria-label="Previous">‹</button>
+          <button class="carousel-btn carousel-next" type="button" data-next aria-label="Next">›</button>
+          <div class="carousel-dots" data-dots></div>
+        </div>
+        <section class="cs-sec" style="border-top:0;">
+          <h2><span class="n">01</span><span data-i18n="cs.problem">The problem</span></h2>
+          <p data-i18n="fujikura.problem">Maintenance at Fujikura ran on reaction: failures were logged into Excel files, but each file had its own schema, so records were not comparable, predictable or planable. <strong>The data was being collected, it just was not usable.</strong></p>
+        </section>
+        <section class="cs-sec">
+          <h2><span class="n">02</span><span data-i18n="cs.did">What I did</span></h2>
+          <div data-i18n="fujikura.did">
+            <p style="margin-bottom:14px;">I designed and built the <strong>Maintenance Failure Analysis Tool</strong>, a browser-only application (open index.html, no server) that reads Excel maintenance logs and turns them into machine risk analysis, forecasts, dashboards and a yearly preventive plan. Everything persists in localStorage.</p>
+            <ul>
+              <li><strong>Upload &amp; column mapping:</strong> drag-and-drop .xlsx/.xls files; column roles are auto-guessed and can be corrected, and files with different schemas can be mixed without losing rows.</li>
+              <li><strong>Failure analysis:</strong> per-machine corrective failure counts with repeat-row dedupe, mean/median MTBF, standard deviation, MTTR, downtime, availability, trend, next-failure forecast with risk window, and a High/Medium/Low risk level with confidence, machines under 2 failures are marked insufficient.</li>
+              <li><strong>Machines page:</strong> machines grouped by class as risk-colored cards, detail view with full history, manual add/remove, bulk delete, asset tags (ACTIVO), and Excel export grouped by category.</li>
+              <li><strong>Dashboard:</strong> filters by week, class, machine, action and counterpart; KPIs; downtime, intervention and MTTR charts; a backtest of predicted vs actual failure dates; root-cause ranking and a priority list of machines to act on.</li>
+              <li><strong>Calendar:</strong> 2026 risk board (W01–W52) plus a planning board with 4-week cadence auto-plan, snapshotted so it survives data clears, preventive task recurrences and export of <em>isolon-2026-preventive-plan.xlsx</em>.</li>
+              <li><strong>Data management:</strong> merged export, clear-all, and full state persistence across reloads.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="cs-sec">
+          <h2><span class="n">03</span><span data-i18n="cs.result">Result</span></h2>
+          <p data-i18n="fujikura.result">Excel logs became a single decision view: risk-colored machines, next-failure predictions, a full 2026 preventive plan and a dashboard that maintenance and production can both read. <strong>The best data system is the one people actually use.</strong></p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span data-year>2026</span> Youness Salmi</span>
+      <span><a data-i18n="footer.email" href="mailto:career@salmiyouness.website">Email</a> · <a data-i18n="footer.linkedin" href="https://www.linkedin.com/in/youness-salmi-71b777331" rel="noopener" target="_blank">LinkedIn</a></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youness Salmi, Mechanical Engineering Technician</title>
+  <meta name="description" content="Mechanical Engineering Technician, CAD design, manufacturing, product development. SolidWorks, AutoCAD. Open to opportunities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">YS<span>.</span></a>
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" aria-current="page" data-i18n="nav.home" href="index.html">Home</a>
+        <a class="nav-link" data-i18n="nav.about" href="about.html">About</a>
+        <a class="nav-link" data-i18n="nav.experience" href="experience.html">Experience</a>
+        <a class="nav-link" data-i18n="nav.projects" href="projects.html">Projects</a>
+        <a class="nav-link" data-i18n="nav.contact" href="contact.html">Contact</a>
+        <select id="langSelect" class="lang-select" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+          <option value="es">ES</option>
+          <option value="de">DE</option>
+        </select>
+        
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero-banner"><img src="youness.png" alt="Youness Salmi"></div>
+    <section class="hero">
+      <div class="container hero-2col">
+        <div>
+          <span class="badge" data-i18n="home.badge">Open to internships</span>
+          <h1>Youness Salmi</h1>
+          <p class="role" data-i18n="home.role">Mechanical Engineering Technician skilled across mechanical design, CAD (SolidWorks, AutoCAD), manufacturing processes, and CNC machining, plus industrial maintenance and quality control.</p>
+          <div class="ctas">
+            <a class="btn btn-accent" data-i18n="home.cta.projects" href="projects.html">View Projects</a>
+            <a class="btn" data-i18n="home.cta.contact" href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="youness.png" alt="Youness Salmi">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 data-i18n="home.projectsTitle">Selected projects</h2>
+        <div class="grid">
+          <a class="pcard" href="velora.html">
+            <span class="tag">CAD · Product Dev</span>
+            <h3 data-i18n="p.velora.title">VELORA, Urban Cargo Bike</h3>
+            <p data-i18n="p.velora.sum">Clean-sheet cargo bike in SolidWorks: chassis optimized for strength and weight, stable load platform, manufacturing method recommended.</p>
+            <span class="go" data-i18n="p.link">Read case study →</span>
+          </a>
+          <a class="pcard" href="turbo.html">
+            <span class="tag">CAD · Design</span>
+            <h3 data-i18n="p.turbo.title">Hybrid Turbo-Compressor System</h3>
+            <p data-i18n="p.turbo.sum">Full 3D assembly of a motor-assisted turbo-compressor, with duty-driven material selection and technical drawings.</p>
+            <span class="go" data-i18n="p.link">Read case study →</span>
+          </a>
+          <a class="pcard" href="voltbox.html">
+            <span class="tag">CAD · Product Dev</span>
+            <h3 data-i18n="p.voltbox.title">VoltBox, Portable Battery</h3>
+            <p data-i18n="p.voltbox.sum">Portable power bank for electric scooter riders, an on-the-go charging solution independent of fixed infrastructure. Finalist at the first CMC Trophy.</p>
+            <span class="go" data-i18n="p.link">Read case study →</span>
+          </a>
+          <a class="pcard" href="fujikura.html">
+            <span class="tag">Workplace · Maintenance</span>
+            <h3 data-i18n="p.fujikura.title">Fujikura, Maintenance Data System</h3>
+            <p data-i18n="p.fujikura.sum">Maintenance Failure Analysis Tool, a browser-only app that turns Excel maintenance logs into risk analysis, forecasts and a 2026 preventive plan.</p>
+            <span class="go" data-i18n="p.link">Read case study →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="mono sec-label" data-i18n="home.aboutLabel">About</p>
+        <p style="color:var(--dim);max-width:60ch;">
+          <span data-i18n="home.aboutText">Hands-on in CAD design, product development, and manufacturing engineering, including real experience on a live production line. Looking for an Engineering Trainee role in product development.</span>
+          <a href="about.html" style="color:var(--accent);font-family:var(--mono);font-size:0.78rem;text-transform:uppercase;" data-i18n="home.aboutLink">About me →</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="mono sec-label" data-i18n="home.contactLabel">Contact</p>
+        <a href="mailto:career@salmiyouness.website" style="color:var(--accent);font-size:1.1rem;">career@salmiyouness.website</a>
+        <p style="color:var(--dim);">+212 784-140087 · <span data-i18n="home.contactLine">Available for internships &amp; freelance CAD work</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span data-year>2026</span> Youness Salmi</span>
+      <span><a data-i18n="footer.email" href="mailto:career@salmiyouness.website">Email</a> · <a data-i18n="footer.linkedin" href="https://www.linkedin.com/in/youness-salmi-71b777331" rel="noopener" target="_blank">LinkedIn</a></span>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
